@@ -23,17 +23,12 @@ This project uses **Natural Language Processing (NLP)** and **Deep Learning** to
 
 ## 🚀 Running on Google Colab
 ### **1️⃣ Upload Required Files to Google Drive**
-Before running the app, make sure your **trained model and datasets** are stored in **Google Drive** under `My Drive/`.  
-Your Google Drive structure should look like this:
+Before running the app, make sure your **trained model and datasets** are stored in **Google Drive** under `My Drive/`. 
 
-📁 My Drive/
-│── 📁 trained_resume_model/   # Trained model directory (stored in Drive)
-│   │── config.json
-│   │── tokenizer.json
-│   │── model.safetensors
-│── 📄 resumes.csv             # Resume dataset
-│── 📄 job_descriptions.csv     # Job descriptions dataset
-│── 📄 app.ipynb               # Google Colab notebook (Gradio app)
+## 📁 File Structure (Google Drive + Google Colab)
+Ensure your files are **uploaded to Google Drive** in the following structure:
+
+📁 My Drive/ │── 📁 trained_resume_model/ # Trained model directory (stored in Drive) │ │── config.json │ │── tokenizer.json │ │── model.safetensors │── 📄 resumes.csv # Resume dataset │── 📄 job_descriptions.csv # Job descriptions dataset │── 📄 app.ipynb # Google Colab notebook (Gradio app)
 
 ---
 
