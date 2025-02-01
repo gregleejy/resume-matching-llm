@@ -1,31 +1,34 @@
-# 🏆 AI-Powered Tech Job Resume Matcher
+# 🏆 AI-Powered Tech Job Resume Analyzer  
 
-### 🚀 Match your resume to the best tech jobs using AI & NLP!
+### 🚀 Get AI-generated job matches & resume summaries instantly!  
 
-This project uses **Natural Language Processing (NLP)** and **Deep Learning** to **match tech-related resumes to the most relevant job descriptions** and provide AI-generated suggestions for improvement.
-
----
-
-## 📌 Features
-✔️ **Tech Job Matching** → Uses NLP-based embeddings to find the best-matching **tech job** for a given resume.  
-✔️ **AI-Powered Resume Analysis** → Analyzes your resume.  
-✔️ **Runs on Google Colab** → No setup needed—just open the Colab notebook and run!  
-✔️ **Uses Google Drive** → Model & datasets are stored in **Google Drive** for easy access.
+This project leverages **Natural Language Processing (NLP)** and **Deep Learning** to:  
+✅ **Analyze a given resume** and generate a **concise summary** of its contents.  
+✅ **Match the resume to the most relevant tech job** based on skill alignment.  
 
 ---
 
-## 🛠️ How It Works
-1. **Resume Embeddings** → Converts resumes into numerical representations using **Sentence Transformers**.
-2. **Job Embeddings** → Converts tech job descriptions into embeddings.
-3. **Matching Algorithm** → Uses **cosine similarity** to find the closest matching job description.
+## 📌 Features  
+✔️ **AI-Powered Resume Analysis** → Generates a summary that highlights key skills, experience, and expertise.  
+✔️ **Tech Job Matching** → Uses NLP-based embeddings to suggest the **best-matching tech job**.  
+✔️ **Runs on Google Colab** → No setup required—just open the notebook and run!  
+✔️ **Google Drive Integration** → Model & datasets are stored in **Google Drive** for easy access.  
 
 ---
 
-## 🚀 Running on Google Colab
-### **1️⃣ Upload Required Files to Google Drive**
+## 🛠️ How It Works  
+1. **Resume Embeddings** → Converts resumes into numerical representations using **Sentence Transformers**.  
+2. **Resume Summarization** → Uses a fine-tuned **LLM** to generate a concise summary.  
+3. **Job Matching** → Compares resume embeddings to job descriptions via **cosine similarity** and suggests the best fit.  
 
-## 📁 File Structure (Google Drive + Google Colab)
-Ensure your files are **uploaded to Google Drive** in the following structure:
+---
+
+## 🚀 Running on Google Colab  
+
+### **1️⃣ Upload Required Files to Google Drive**  
+
+## 📁 File Structure (Google Drive + Google Colab)  
+Ensure your files are **uploaded to Google Drive** in the following structure:  
 
 - **My Drive/**
   - **trained_resume_model/** (Trained model directory)
@@ -34,7 +37,7 @@ Ensure your files are **uploaded to Google Drive** in the following structure:
     - `model.safetensors`
   - `resumes.csv` (Resume dataset)
   - `job_descriptions.csv` (Job descriptions dataset)
-  - `app.ipynb` (Google Colab notebook)
+  - `deploy_model.ipynb` (Google Colab notebook)
 
 ---
 
@@ -43,46 +46,50 @@ Your **GitHub repository** should be structured as follows:
 
 - **resume-matching-LLM/**
   - `train_model.ipynb` (Notebook for training the model)
-  - `app.ipynb` (Google Colab notebook for running the app)
+  - `deploy_model.ipynb` (Google Colab notebook for running the app)
   - `README.md` (Project documentation)
   - `requirements.txt` (Dependencies for Colab)
   - `.gitignore` (Ignore unnecessary files)
 
 ---
 
-### **2️⃣ Open & Run the Colab Notebook**
-1. **Open Google Colab** → [Google Colab](https://colab.research.google.com/).
-2. Upload **`app.ipynb`** to Colab.
-3. **Mount Google Drive** when prompted.
-4. Run all cells in the notebook.
-5. A **Gradio web app** will launch with a public link where you can **paste a resume and get job matching results**.
 
 ---
 
-## 📊 Model Training
-### **🔹 How I Trained It**
-- **Dataset**: Used a dataset of **tech resumes and job descriptions**.
-- **Embeddings Model**: `all-MiniLM-L6-v2` for **resume-job similarity**.
-- **LLM Fine-Tuning**: Fine-tuned `t5-small` to generate **resume feedback**.
+### **2️⃣ Open & Run the Colab Notebook**  
+1. **Open Google Colab** → [Google Colab](https://colab.research.google.com/).  
+2. Upload **`app.ipynb`** to Colab.  
+3. **Mount Google Drive** when prompted.  
+4. Run all cells in the notebook.  
+5. A **Gradio web app** will launch with a public link where you can **paste a resume and get job matching results + a summary**.  
 
 ---
 
-## 📌 Future Improvements
+## 📊 Model Training  
+
+### **🔹 How I Trained It**  
+- **Dataset**: Used a dataset of **tech resumes and job descriptions**.  
+- **Embeddings Model**: `all-MiniLM-L6-v2` for **resume-job similarity**.  
+- **LLM Fine-Tuning**: Fine-tuned `t5-small` to generate **resume summaries**.  
+
+---
+
+## 📌 Future Improvements  
 🚀 **Expand to Other Job Sectors** (Right now, it’s focused on tech jobs).  
-🚀 **Improve Resume Feedback** by fine-tuning a more powerful LLM.  
+🚀 **Enhance Resume Feedback** by fine-tuning a more powerful LLM.  
 🚀 **Deploy on Hugging Face for Public Access** (Currently runs only on Google Colab).  
 
 ---
 
-## 🤝 Contributing
-If you'd like to contribute:
-1. **Fork the repository**.
-2. **Make your changes**.
-3. **Submit a pull request**.
+## 🤝 Contributing  
+If you'd like to contribute:  
+1. **Fork the repository**.  
+2. **Make your changes**.  
+3. **Submit a pull request**.  
 
 ---
 
-## 📜 Acknowledgments
-- **Hugging Face Transformers** for NLP models.
-- **Sentence Transformers** for embeddings.
-- **Google Colab** for training
+## 📜 Acknowledgments  
+- **Hugging Face Transformers** for NLP models.  
+- **Sentence Transformers** for embeddings.  
+- **Google Colab** for training.  
