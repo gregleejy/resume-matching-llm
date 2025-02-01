@@ -18,7 +18,7 @@ This project leverages **Natural Language Processing (NLP)** and **Deep Learning
 
 ## 🛠️ How It Works  
 1. **Resume Embeddings** → Converts resumes into numerical representations using **Sentence Transformers**.  
-2. **Resume Summarization** → Uses a fine-tuned **LLM** to generate a concise summary.  
+2. **Resume Summarization** → Uses `bart-large-cnn` to generate a concise summary.  
 3. **Job Matching** → Compares resume embeddings to job descriptions via **cosine similarity** and suggests the best fit.  
 
 ---
@@ -53,9 +53,6 @@ Your **GitHub repository** should be structured as follows:
 
 ---
 
-
----
-
 ### **2️⃣ Open & Run the Colab Notebook**  
 1. **Open Google Colab** → [Google Colab](https://colab.research.google.com/).  
 2. Upload **`app.ipynb`** to Colab.  
@@ -70,7 +67,7 @@ Your **GitHub repository** should be structured as follows:
 ### **🔹 How I Trained It**  
 - **Dataset**: Used a dataset of **tech resumes and job descriptions**.  
 - **Embeddings Model**: `all-MiniLM-L6-v2` for **resume-job similarity**.  
-- **LLM Fine-Tuning**: Fine-tuned `t5-small` to generate **resume summaries**.  
+- **LLM for Summarization**: Used `bart-large-cnn` to generate **resume summaries**.  
 
 ---
 
@@ -89,7 +86,4 @@ If you'd like to contribute:
 
 ---
 
-## 📜 Acknowledgments  
-- **Hugging Face Transformers** for NLP models.  
-- **Sentence Transformers** for embeddings.  
-- **Google Colab** for training.  
+##
